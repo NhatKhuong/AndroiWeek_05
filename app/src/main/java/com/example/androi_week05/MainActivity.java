@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
         arrayList = new ArrayList<>();
         arrayList.add(new Goods("Tasty Donut","Spicy tasty  donut family",10,R.drawable.donut_yellow_1));
+        arrayList.add(new Goods("Cook","Cook tasty  donut family",10,R.drawable.ca_nau_lau));
+        arrayList.add(new Goods("Tasty Donut","Spicy tasty  donut family",10,R.drawable.donut_yellow_1));
+        arrayList.add(new Goods("Tasty Donut","Spicy tasty  donut family",10,R.drawable.donut_yellow_1));
         arrayList.add(new Goods("Tasty Donut","Spicy tasty  donut family",10,R.drawable.donut_yellow_1));
         arrayList.add(new Goods("Tasty Donut","Spicy tasty  donut family",10,R.drawable.donut_yellow_1));
         adt = new CustomGoodApdapter(this, R.layout.item_listview, arrayList);

@@ -12,9 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:background="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/lvGoods"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.001"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
@@ -45,8 +42,8 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="214dp"
-        android:layout_height="39dp"
+        android:layout_width="371dp"
+        android:layout_height="46dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bordereditview"
         android:backgroundTint="#FAFAFA"
@@ -98,12 +95,12 @@
     <ListView
         android:id="@+id/lvGoods"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_height="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.064" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

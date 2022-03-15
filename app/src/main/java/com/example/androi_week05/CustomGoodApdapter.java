@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -50,6 +51,15 @@ public class CustomGoodApdapter extends BaseAdapter {
         txtName.setText(arrayList.get(i).getName());
         txtdescription.setText(arrayList.get(i).getDescription());
         txtprice.setText("$ "+arrayList.get(i).getPrice());
+        imageitem.setImageResource(arrayList.get(i).getImg());
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(ctx,String.valueOf(i),Toast.LENGTH_SHORT).show();
+            }
+        });
+
         return  view;
 
 
