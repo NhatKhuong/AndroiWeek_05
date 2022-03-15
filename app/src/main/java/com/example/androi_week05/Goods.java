@@ -1,6 +1,8 @@
 package com.example.androi_week05;
 
-public class Goods {
+import java.io.Serializable;
+
+public class Goods implements Serializable {
 
     private String name;
     private String description;

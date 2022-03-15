@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androi_Week05">
         <activity
+            android:name=".itemDetail"
+            android:exported="false">
+
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -1,10 +1,13 @@
 package com.example.androi_week05;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -48,6 +51,12 @@ public class CustomGoodApdapter extends BaseAdapter {
         TextView txtprice =view.findViewById(R.id.txtprice);
         ImageView imageitem =view.findViewById(R.id.imageitem);
 
+        Button btnD = view.findViewById(R.id.btnDount);
+        Button btnP = view.findViewById(R.id.btnPink);
+        Button btnF = view.findViewById(R.id.btnFloat);
+
+
+
         txtName.setText(arrayList.get(i).getName());
         txtdescription.setText(arrayList.get(i).getDescription());
         txtprice.setText("$ "+arrayList.get(i).getPrice());
@@ -57,6 +66,10 @@ public class CustomGoodApdapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 Toast.makeText(ctx,String.valueOf(i),Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(ctx,itemDetail.class);
+
+                intent.putExtra("goods",arrayList.get(i));
+                ctx.startActivity(intent);
             }
         });
 
