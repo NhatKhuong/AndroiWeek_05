@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txtsearch"
         android:layout_width="371dp"
         android:layout_height="46dp"
         android:layout_marginTop="8dp"
@@ -50,7 +50,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
-        android:text="Search food"
+        android:text=""
+        android:hint="Search Food"
         android:textColor="#816F6F"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -89,8 +90,8 @@
         android:backgroundTint="#ECE3E3"
         android:text="Donut"
         android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/txtsearch"
+        app:layout_constraintTop_toBottomOf="@+id/txtsearch" />
 
     <ListView
         android:id="@+id/lvGoods"
